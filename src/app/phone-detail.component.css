@@ -1,0 +1,35 @@
+label {
+  display: inline-block;
+  width: 7em;
+  margin: .5em 0;
+  color: #607D8B;
+  font-weight: bold;
+  padding: 5px;
+}
+input {
+  height: 2em;
+  font-size: 1em;
+  padding-left: .4em;
+}
+button {
+  margin-top: 20px;
+  font-family: Arial;
+  background-color: #75a3a3;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer; cursor: hand;
+}
+button:hover {
+  background-color: #c2d6d6;
+}
+button:disabled {
+  background-color: #eee;
+  color: #ccc; 
+  cursor: auto;
+}
+/*Shadow to image  */
+img {
+  margin-left: 8em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

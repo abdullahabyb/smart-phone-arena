@@ -1,0 +1,13 @@
+<h3>Top Phones</h3>
+<div class="grid grid-pad">
+  <a *ngFor="let phone of phones"  [routerLink]="['/detail', phone.id]"  class="col-1-4">
+    <div class="module phone">
+      <!--linking image of each emelent in array  -->
+      <img id="allImg" src="{{phone.image}}"/>
+      <h4>{{phone.name}}</h4>
+      <!--new description field  -->
+      <a>{{phone.desc}}</a>
+    </div>
+  </a>
+</div>
+<phone-search></phone-search>

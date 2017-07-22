@@ -1,0 +1,38 @@
+
+/*App Title  */
+#topBar{
+  font-size: 2em;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #000000;
+  margin: auto;
+  margin-bottom: 10px;
+  text-align: center;
+}
+/*Navigation bar  */
+#navBar {
+  padding-bottom: 10px;
+  border-bottom: solid 2px;
+  text-align: center;
+  vertical-align: center;
+}
+h2 {
+  font-size: 2em;
+  margin-top: 0;
+  padding-top: 0;
+}
+nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+nav a:hover {
+  color: #669999;
+  background-color: #CFD8DC;
+}
+nav a.active {
+  color: #669999;
+  background-color: #CFD8DC;
+}

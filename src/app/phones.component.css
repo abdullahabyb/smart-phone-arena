@@ -1,0 +1,97 @@
+.selected {
+  background-color: #CFD8DC !important;
+  color: white;
+}
+.phones {
+  margin: auto;
+  list-style-type: none;
+  padding: 0;
+  width: 25em;
+}
+.phones li {
+  cursor: pointer;
+   position: relative; 
+  left: 0;
+  background-color: #EEE;
+  margin: .5em;
+  padding: .3em 0;
+  height: 1.6em;
+}
+.phones li:hover {
+  color: #607D8B;
+  background-color: #a3c2c2;
+  left: .1em;
+}
+.phones li.selected:hover {
+  background-color: #BBD8DC !important;
+  color: #3d5c5c;
+}
+.phones li.selected {
+  color: #607D8B;
+}
+.phones .badge {
+  font-size: small;
+  color: white;
+  padding: 0.5em;  
+}
+
+button {
+  font-family: Arial;
+  background-color: #75a3a3;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  cursor: hand;
+}
+button:hover {
+  background-color: #cfd8dc;
+}
+button.delete {
+  float:right;
+  margin-right: .6em;
+  background-color: #4d1300 !important;
+  color:white;
+}
+/*style input feld to add new phone  */
+#inPH {
+  margin: auto;
+  margin-top: 20px;
+  width: 380px;
+  height: 30px;
+  display:block;
+}
+/*add button new phone  */
+#addBTN {
+  margin: auto;
+  height: 35px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display:block;
+}
+/*view button   */
+#viewBTN {
+  height: 35px;
+  margin: auto;
+  margin-bottom: 20px;
+  display:block;
+}
+/*head of view  */
+#viewH {
+  color: #f0f5f5;
+  text-align: center;
+}
+/*unordered list  */
+#allLI {
+  margin: auto;
+  text-align: center;
+}
+/*image for list  */
+#allI {
+  margin-top: -2px;
+  width : 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h2 {
+  text-align: center;
+}

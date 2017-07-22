@@ -1,0 +1,21 @@
+<div *ngIf="phone">
+  <h2>Edit {{phone.name}} Description:</h2>
+  <div>
+    <!--Image of selected phone added in detail view  -->
+    <img src="{{phone.image}}"/>
+  </div>
+  <div>
+    <label>ID: </label>{{phone.id}}
+  </div>
+  <div>
+    <label>Name: </label>
+    <input [(ngModel)]="phone.name" placeholder="Name" />
+   </div>
+  <div>
+    <!--Description added as and editable field  -->
+    <label>Description: </label>
+    <input [(ngModel)]="phone.desc" placeholder="Description" />
+  </div>
+  <button (click)="goBack()">Back</button>
+  <button (click)="save()">Save</button>
+</div>

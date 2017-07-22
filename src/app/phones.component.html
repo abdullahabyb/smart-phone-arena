@@ -1,0 +1,25 @@
+<h2>All Phones</h2>
+<!-- <div id="allLI"> -->
+<div *ngIf="selectedPhone">
+  <h3 id="viewH">
+    You have selected {{selectedPhone.name | uppercase}}
+  </h3>
+  <button id="viewBTN" (click)="gotoDetail()">View Details</button>
+</div>
+<ul class="phones">
+  <li *ngFor="let phone of phones" (click)="onSelect(phone)"
+      [class.selected]="phone === selectedPhone">
+      <!--image to list  -->
+    <span class="badge"><img id="allI" src="{{phone.image}}"/></span> 
+    <span>{{phone.name}}</span>
+    <button class="delete"
+      (click)="delete(phone); $event.stopPropagation()">x</button>
+  </li>
+</ul>
+<div id="addDiv">
+  <input id="inPH" #phoneName placeholder="Add New Phone"/>
+  <button id="addBTN" (click)="add(phoneName.value); phoneName.value=''">
+    Add
+  </button>
+</div>
+<!-- </div> -->

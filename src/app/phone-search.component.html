@@ -1,0 +1,12 @@
+<div id="search-component">
+  <div id="searchD">
+  <h4 id="ffHead">Phone Finder : </h4>
+  <input #searchBox id="search-box" (keyup)="search(searchBox.value)" placeholder="Search..."/>
+  </div>
+  <div>
+    <div *ngFor="let phone of phones | async"
+         (click)="gotoDetail(phone)" class="search-result" >
+      {{phone.name}}
+    </div>
+  </div>
+</div>
